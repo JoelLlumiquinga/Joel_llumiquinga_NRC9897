@@ -1,0 +1,2 @@
+# Joel_llumiquinga_NRC9897
+TRABAJOS ESTRUTURA DE DATOS
