@@ -1,0 +1,38 @@
+class Pila:
+    def __init__(self):
+        self.items = []
+
+    def esta_vacia(self):
+        return len(self.items) == 0
+
+    def apilar(self, elemento):
+        self.items.append(elemento)
+
+    def desapilar(self):
+        if self.esta_vacia():
+            return None
+        return self.items.pop()
+
+
+# Crear una instancia de la pila
+mi_pila = Pila()
+
+# Apilar elementos en la pila
+mi_pila.apilar("A")
+mi_pila.apilar("B")
+mi_pila.apilar("C")
+
+# Verificar si la pila está vacía
+if mi_pila.esta_vacia():
+    print("La pila está vacía")
+else:
+    print("La pila no está vacía")
+
+# Desapilar elementos de la pila
+elemento = mi_pila.desapilar()
+print("Elemento desapilado:", elemento)
+
+# Verificar el elemento en la parte superior de la pila
+if not mi_pila.esta_vacia():
+    elemento_superior = mi_pila.items[-1]
+    print("Elemento en la parte superior de la pila:", elemento_superior)
