@@ -1,0 +1,34 @@
+# Crear una lista vacía
+mi_lista = []
+
+# Agregar elementos a la lista
+mi_lista.append("manzana")
+mi_lista.append("banana")
+mi_lista.append("cereza")
+
+# Imprimir la lista
+print("La lista contiene:", mi_lista)
+
+# Acceder a elementos individuales de la lista
+print("El primer elemento es:", mi_lista[0])
+print("El segundo elemento es:", mi_lista[1])
+print("El tercer elemento es:", mi_lista[2])
+
+# Modificar un elemento de la lista
+mi_lista[1] = "pera"
+print("La lista modificada es:", mi_lista)
+
+# Eliminar un elemento de la lista
+elemento_eliminado = mi_lista.pop(0)
+print("Elemento eliminado:", elemento_eliminado)
+print("La lista después de eliminar un elemento:", mi_lista)
+
+# Obtener la longitud de la lista
+longitud = len(mi_lista)
+print("La longitud de la lista es:", longitud)
+
+# Verificar si un elemento está en la lista
+if "banana" in mi_lista:
+    print("La lista contiene 'banana'")
+else:
+    print("La lista no contiene 'banana'")
